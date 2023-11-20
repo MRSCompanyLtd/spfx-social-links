@@ -1,0 +1,51 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.socialLinks {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.linkZone {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: normal;
+  justify-content: space-evenly;
+  padding: 0;
+
+  li {
+    list-style: none;
+    display: flex;
+  }
+
+  li:hover {
+    filter: brightness(110%);
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  a {
+    text-decoration: none;
+    color: "[theme:accentButtonText, default:#03787c]";
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      filter: brightness(110%);
+    }
+  }
+}
